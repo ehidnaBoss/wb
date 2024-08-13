@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Human struct {
 	Name    string
@@ -9,7 +12,11 @@ type Human struct {
 }
 
 func (p Human) FullName() string {
-	return p.Name + " " + p.Surname
+	x := strings.Builder{}
+	x.WriteString(p.Name)
+	x.WriteString(" ")
+	x.WriteString(p.Surname)
+	return x.String()
 }
 
 type Action struct {
