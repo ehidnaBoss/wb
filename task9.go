@@ -10,8 +10,8 @@ func main() {
 	go firstChannelWriter(chOne, digits)
 	go secondChannelMulti(chOne, chTwo)
 
-	for i := range chTwo {
-		fmt.Println(i)
+	for v := range chTwo {
+		fmt.Println(v)
 	}
 }
 func firstChannelWriter(ch chan int, arr [5]int) {
