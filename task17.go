@@ -14,8 +14,8 @@ func main() {
 	})
 
 	if index < len(arr) && arr[index] == target {
-		fmt.Printf("Элемент %d найден на позиции %d\n", target, index)
+		fmt.Printf("элемент %d найден на позиции %d\n", target, index)
 	} else {
-		fmt.Printf("Нет такого %d", target)
+		fmt.Printf("не пизди, нет такого %d", target)
 	}
 }
